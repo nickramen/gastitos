@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gastitos | Categories</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="assets/img/logo.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="">
+                <span class="d-none d-lg-block">Gastitos</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <div class="search-bar">
+            <form class="search-form d-flex align-items-center" method="POST" action="#">
+                <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+                <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+            </form>
+        </div><!-- End Search Bar -->
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li><!-- End Search Icon-->
+
+
+                <li class="nav-item dropdown pe-3">
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="assets/img/profile-picture.png" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">Nicole Ramos</span>
+                    </a><!-- End Profile Iamge Icon -->
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6>Nicole Ramos</h6>
+                            <span>@nickramen</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="profile.html">
+                                <i class="bi bi-person"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <!-- <li>
+                            <a class="dropdown-item d-flex align-items-center" href="profile.html">
+                                <i class="bi bi-gear"></i>
+                                <span>Account Settings</span>
+                            </a>
+                        </li> 
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>-->
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-question-circle"></i>
+                                <span>Need Help?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Sign Out</span>
+                            </a>
+                        </li>
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+        </a>
+        </li><!-- End Dashboard Nav -->
+
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="book.html">
+                <i class="bi bi-journal-text"></i><span>Book</span>
+            </a>
+        </li><!-- End Forms Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link" href="categories.html">
+                <i class="bi bi-layout-text-window-reverse"></i><span>Categories</span>
+            </a>
+        </li><!-- End Tables Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#">
+                <i class="bi bi-bar-chart"></i><span>Reports (Coming Soon)</span>
+            </a>
+        </li><!-- End Charts Nav -->
+    </ul>
+
+    </aside><!-- End Sidebar-->
+
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>Categories</h1>
+        </div>
+
+        <section class="section dashboard">
+            <div class="row">
+                <!-- Left side columns -->
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 col-sm-12">
+                            <div class="card recent-sales overflow-auto">
+                                <div class="card-body">
+                                    <h5 class="card-title">Create a new category</h5>
+                                    <form class="row g-3">
+                                        <div class="col-md-12">
+                                            <label for="category-description" class="form-label">Description</label>
+                                            <input type="text" class="form-control" id="category-description">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="category-type" class="form-label">Type</label>
+                                            <select class="form-select" id="category-type">
+                                                <option selected>Select an option</option>
+                                                <option value="1">Outcome</option>
+                                                <option value="2">Income</option>
+                                            </select>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <button type="reset" class="btn btn-secondary">Reset</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-md-12 col-lg-6 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card recent-sales overflow-auto">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Income Categories</h5>
+                                            <div class="category-icons2">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-cash-stack"></i>Salary</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-cash"></i>Part-time</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-cash-coin"></i>Investment</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-coin"></i>Prizes</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-piggy-bank"></i>Other</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <table class="table table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="width: 70%;">Custom Income Categories</th>
+                                                        <th scope="col" style="width: 30%; text-align: right;">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><i class="bi bi-star category-icons"></i>Tutoring</td>
+                                                        <td style="text-align: right;">
+                                                            <i class="bi bi-pen action-icons"></i>
+                                                            <i class="bi bi-trash action-icons"></i>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="card recent-sales overflow-auto">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Outcome Categories</h5>
+                                            <div class="category-icons2">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-cart3"></i>Food</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-shop"></i>Shopping</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-heart-pulse"></i>Health</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-backpack3"></i>Education</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-truck-front"></i>Transportation</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-brush"></i>Art</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-balloon-heart"></i>Donation</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-fuel-pump"></i>Gas</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-gift"></i>Gift</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-house"></i>Rent</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-wifi"></i>Internet</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-smartwatch"></i>Electronics</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-bicycle"></i>Sports</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-car-front"></i>Car</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-luggage"></i>Travel</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-tools"></i>Repair</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-controller"></i>Entertainment</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-people"></i>Social</p>
+                                                    </div>
+                                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                                        <p><i class="bi bi-cup-straw"></i>Alcohol</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <table class="table table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="width: 70%;">Custom Outcome Categories</th>
+                                                        <th scope="col" style="width: 30%; text-align: right;">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><i class="bi bi-star category-icons"></i>Netflix</td>
+                                                        <td style="text-align: right;">
+                                                            <i class="bi bi-pen action-icons"></i>
+                                                            <i class="bi bi-trash action-icons"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="bi bi-star category-icons"></i>YouTube Premium</td>
+                                                        <td style="text-align: right;">
+                                                            <i class="bi bi-pen action-icons"></i>
+                                                            <i class="bi bi-trash action-icons"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="bi bi-star category-icons"></i>Disney Plus</td>
+                                                        <td style="text-align: right;">
+                                                            <i class="bi bi-pen action-icons"></i>
+                                                            <i class="bi bi-trash action-icons"></i>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>  
+                    </div>
+                </div><!-- End Left side columns -->
+        
+                <!-- Right side columns -->
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Support Ads</h5>
+                            <a href="">Learn more</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+

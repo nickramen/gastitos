@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gastitos | Dashboard</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="assets/img/logo.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="">
+                <span class="d-none d-lg-block">Gastitos</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <div class="search-bar">
+            <form class="search-form d-flex align-items-center" method="POST" action="#">
+                <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+                <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+            </form>
+        </div><!-- End Search Bar -->
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li><!-- End Search Icon-->
+
+                <li class="nav-item dropdown pe-3">
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="assets/img/profile-picture.png" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">Nicole Ramos</span>
+                    </a><!-- End Profile Iamge Icon -->
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6>Nicole Ramos</h6>
+                            <span>@nickramen</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="profile.html">
+                                <i class="bi bi-person"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <!-- <li>
+                            <a class="dropdown-item d-flex align-items-center" href="profile.html">
+                                <i class="bi bi-gear"></i>
+                                <span>Account Settings</span>
+                            </a>
+                        </li> 
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>-->
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-question-circle"></i>
+                                <span>Need Help?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Sign Out</span>
+                            </a>
+                        </li>
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+        <li class="nav-item">
+        <a class="nav-link" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+        </a>
+        </li><!-- End Dashboard Nav -->
+
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="book.html">
+                <i class="bi bi-journal-text"></i><span>Book</span>
+            </a>
+        </li><!-- End Forms Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="categories.html">
+                <i class="bi bi-layout-text-window-reverse"></i><span>Categories</span>
+            </a>
+        </li><!-- End Tables Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#">
+                <i class="bi bi-bar-chart"></i><span>Reports (Coming Soon)</span>
+            </a>
+        </li><!-- End Charts Nav -->
+    </ul>
+
+    </aside><!-- End Sidebar-->
+
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>Dashboard</h1>
+        </div>
+
+        <section class="section dashboard">
+            <div class="row">
+                <!-- Left side columns -->
+                <div class="col-lg-9">
+                    <div class="row">
+                        <!-- Summary Card -->
+                        <div class="col-xxl-12 col-md-12">
+                            <div class="card info-card">
+                                <div class="filter">
+                                    <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                    <li class="dropdown-header text-start">
+                                        <h6>Filter</h6>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Today</a></li>
+                                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-4 col-lg-4 col-sm-12 card-outcome">
+                                            <h5 class="card-title">Outcome <span>- Today</span></h5>
+                                            <div class="d-flex align-items-center">
+                                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                                    <i class="bi bi-arrow-down"></i>
+                                                </div>
+                                                <div class="ps-3">
+                                                    <h6>$145</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-4 col-sm-12 card-income">
+                                            <h5 class="card-title">Income <span>- Today</span></h5>
+                                            <div class="d-flex align-items-center">
+                                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                                    <i class="bi bi-arrow-up"></i>
+                                                </div>
+                                                <div class="ps-3">
+                                                    <h6>$3,264</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-4 col-sm-12 card-balance">
+                                            <h5 class="card-title">Balance <span>- Today</span></h5>
+                                            <div class="d-flex align-items-center">
+                                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                                    <i class="bi bi-arrow-left-right"></i>
+                                                </div>
+                                                <div class="ps-3">
+                                                    <h6>$3119</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Recent Activity Card -->
+                        <div class="col-12">
+                            <div class="card recent-sales overflow-auto">
+                                <div class="card-body">
+                                    <h5 class="card-title">Today's Activity</h5>
+                                    <table class="table table-sm .table-responsive{sm} table-hover" id="transactionTable">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" style="width: 80%;">Description</th>
+                                                <th scope="col" style="width: 20%; text-align: right;">Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><i class="bi bi-shop category-icons"></i>2024 annual planner</td>
+                                                <td class="outcome" style="text-align: right;">-134</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="bi bi-heart-pulse category-icons"></i>Pills for my stomach</td>
+                                                <td class="income" style="text-align: right;">234</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="bi bi-people category-icons"></i>Tacos hermanos w Daya</td>
+                                                <td class="outcome" style="text-align: right;">-23</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="bi bi-truck-front category-icons"></i>Uber from terminal to home</td>
+                                                <td class="outcome" style="text-align: right;">-98</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="bi bi-truck-front category-icons"></i>Uber from home to terminal</td>
+                                                <td class="outcome" style="text-align: right;">-98</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="bi bi-wifi category-icons"></i>Internet</td>
+                                                <td class="income" style="text-align: right;">500</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>      
+                    </div>
+                </div><!-- End Left side columns -->
+        
+                <!-- Right side columns -->
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Support Ads</h5>
+                            <a href="">Learn more</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="transactionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Transaction Details</h5>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Modal content will be added dynamically using JavaScript -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModalBtn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        document.getElementById('transactionTable').addEventListener('click', function(event) {
+            if (event.target.tagName === 'TD' && event.target.parentElement.tagName === 'TR') {
+                const rowData = Array.from(event.target.parentElement.children).map(td => td.innerHTML);
+    
+                // Extract the icon HTML from the second column
+                const iconHTML = rowData[0].split('</i>')[0] + '</i>'; // Extract the icon part
+    
+                const modalBody = document.getElementById('modalBody');
+                modalBody.innerHTML = `
+                    <p><strong>Category:</strong><span contenteditable="true"> ${iconHTML}</span></p>
+                    <p><strong>Description:</strong><span contenteditable="true"> ${rowData[0].split('</i>')[1]}</span></p>
+                    <p><strong>Amount:</strong><span contenteditable="true"> ${rowData[1]}</span></p>
+                `;
+    
+                $('#transactionModal').modal('show');
+    
+                // Close modal using jQuery
+                $('#closeModalBtn').on('click', function() {
+                    $('#transactionModal').modal('hide');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
+
